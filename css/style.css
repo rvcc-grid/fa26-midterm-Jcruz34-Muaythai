@@ -1,38 +1,55 @@
 /* Styles for Mobile Site */
 
-body {
-    background-color:gray;
+\body {
+    background-color:#8C0858;
+    color:#90160D;
 }
-
+ 
 /* Head & Hero */
 header,main,footer {
-    background-color:white;
+    background-color:#FEF7DA;
     padding:1rem;
     box-shadow:10px 10px 10px rgba(0,0,0,.5);
     margin-bottom:2rem;
-    border:5px solid #ddd;
+    border:5px solid #90160D;
 }
 header {
     text-align:center;
+    background-color:#FFC5AB;
 }
 main {
-    border:5px solid #ddd;
+    border:5px solid #90160D;
 }
 h1 {
     font-size:400%;
     margin:1rem;
     padding:0px;
+    color:#8C0858;
+}
+h2, h3 {
+    color:#8C0858;
 }
 #hero div {
     padding:4rem;
+}
+#hero .cta {
+    font-weight:bold;
+    color:#8C0858;
 }
 #hero img {
     max-width:80%;
     display:block;
     margin:0px auto;
 }
-
+ 
 /* Projects */
+.project {
+    background-color:#FFE8F0;
+    border:3px solid #8C0858;
+    border-radius:1rem;
+    padding:1rem;
+    margin-bottom:1.5rem;
+}
 #projects img { 
     display:block;
     max-width:50%;
@@ -42,16 +59,17 @@ h1 {
     text-align:center;
     font-size:200%; 
 }
-
+ 
 /* Reviews */
 #reviews .review {
     display:flex;
     flex-direction: column;
-    border:3px solid #ddd;
+    border:3px solid #FFC5AB;
     border-radius:1rem;
     padding:2rem;
     margin-bottom:1rem;
-    background-color:#eee;
+    background-color:#90160D;
+    color:#FEF7DA;
 }
 .review .content {
     flex-grow:4;
@@ -61,20 +79,23 @@ h1 {
 .review .name {
     font-size:120%;
     font-weight:bold;
+    color:#FFC5AB;
 }
 .review .title {
     font-style:italic;
 }
-
+ 
 /* Footer */
 footer {
     text-align:center;
+    background-color:#90160D;
+    color:#FEF7DA;
 }
-
-
+ 
+ 
 /* Media state for Desktop site */
-@media (min-width: 800px) {
-
+@media (min-width: 800px) 
+ 
     /* Other Styles */
     body {
         max-width:1000px;
@@ -82,12 +103,11 @@ footer {
         padding:2rem;
     }
     header,main,footer {
-        background-color:white;
         padding:2.5rem 5rem;
         box-shadow:10px 10px 10px rgba(0,0,0,.5);
         margin-bottom:2rem;
     }
-
+ 
     /* Head & Hero */
     #hero {
         display:flex;
@@ -97,7 +117,7 @@ footer {
     #hero img {
         max-width:20%;
     }
-
+ 
     /* Projects */
     .project {
         display:flex;
@@ -109,7 +129,7 @@ footer {
     #projects img { 
         max-width:20%;
     }
-
+ 
     /* Reviews */
     #reviews {
         display:grid;
@@ -122,7 +142,6 @@ footer {
     .review * {
         /*border:1px solid black;*/
     }
-
+ 
     /* Footer */
-
-}
+ 
